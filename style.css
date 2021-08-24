@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(#2b1055,#7597de);
+}
+header
+{
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 30px,100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .Name
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor:default;
+    user-select: none;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li button
+{
+    outline: none;
+    background:  none;
+    border: 0;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Active
+{
+    background: #fff;
+    color: #2b1055;
+}
+.Sudo_body
+{
+    color:#fff;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+.Sudo_body a 
+{
+    color:#fff;
+}
+header ul li button:hover
+{
+    background: #fff;
+    color: #2b1055;
+}
+button
+{
+    outline: none;
+    background:  none;
+    border: 0;
+    text-decoration: none;
+    padding: 10px;
+    color: #2b1055;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #fff;
+}
