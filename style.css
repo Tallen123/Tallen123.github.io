@@ -1,72 +1,106 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-body
-{
+
+body {
     min-height: 100vh;
-    background: linear-gradient(#2b1055,#7597de);
+    background-color: #5EC994;
 }
-header
-{
+
+header {
     padding-top: 2%;
     padding-right: 2%;
     padding-left: 2%;
     position: absolute;
     top: 0;
     left: 0;
-    width:100%;
-    padding: 30px,100px;
+    width: 100%;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header .Name
-{
+
+header .Fh {
     color: #fff;
-    font-weight: 700;
+    top: 15%;
+    font-weight: 100;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    cursor:default;
+    cursor: default;
+    position: absolute;
     user-select: none;
+    animation-name: Name;
+    animation-duration: 0.5s;
 }
-header ul
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header ul li
-{
-    list-style: none;
-    margin-left: 20px;
-}
-header ul li button
-{
-    outline: none;
-    background:  none;
-    border: 0;
-    text-decoration: none;
-    padding: 10px;
+
+header .FName {
     color: #fff;
-    border-radius: 20px;
-    cursor: pointer;
+    top: 15%;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: default;
+    position: absolute;
+    user-select: none;
+    animation-name: Name;
+    animation-duration: 1s;
 }
-.Active
-{
-    background: #fff;
-    color: #2b1055;
+
+header .SName {
+    color: #fff;
+    top: 15%;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: default;
+    position: absolute;
+    user-select: none;
+    animation-name: Name;
+    animation-duration: 1.5s;
 }
-.Sudo_body
-{
-    color:#fff;
+
+header .Sh {
+    color: #fff;
+    top: 15%;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: default;
+    position: absolute;
+    user-select: none;
+    animation-name: Name;
+    animation-duration: 2s;
+}
+
+@keyframes Name {
+    100% {
+        left: 15px;
+    }
+    0% {
+        left: -10000px;
+    }
+}
+
+.Active {
+    background: rebeccapurple;
+    color: white;
+}
+
+.Sudo_body {
+    color: #fff;
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 10%;
@@ -75,24 +109,82 @@ header ul li button
     font-family: 'Poppins', sans-serif;
     user-select: none;
 }
-.Sudo_body a 
-{
-    color:#fff;
-}
-header ul li button:hover
-{
-    background: #fff;
-    color: #2b1055;
-}
-button
-{
+
+.List {
     outline: none;
-    background:  none;
+    background: none;
+    text-decoration: none;
+    padding: 6px;
+    color: #fff;
+    list-style: none;
+    animation-name: Name;
+    animation-duration: 2.5s;
+}
+
+.List li {
+    padding: 6px;
+}
+
+header ul li button:hover {
+    background: rebeccapurple;
+    color: white;
+}
+
+button {
+    outline: none;
+    background: none;
+    border-radius: 10px;
     border: 0;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    background: #000;
+    z-index: 2;
+}
+
+.Sudo_body a {
+    color: #fff;
+}
+
+#CV {
+    outline: none;
+    background: none;
+    border: 0;
+    width: 10%;
     text-decoration: none;
     padding: 10px;
     color: #2b1055;
     border-radius: 20px;
     cursor: pointer;
     background: #fff;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+p {
+    font-weight: 600;
+}
+
+.CV {
+    color: #fff;
+    position: absolute;
+    left: 56rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+@keyframes CVA {
+    100% {
+        left: 20%;
+    }
+    0% {
+        left: -100%;
+    }
 }

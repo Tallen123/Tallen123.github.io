@@ -2,236 +2,269 @@
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
 <title>Tallen Thompson</title>
-    <header>
-        <h1 class="Name">Tallen Thompson</h1>
-            <ul>
-                <li><button id="Home"class="Active">Home</button></li>
-                <li><button id="About_me">About me</button></a></li>
-                <li><button id="Projects">Projects</button></li>
-                <li><button id="Hobbies">Hobbies</button></li>
-                <li><button id="Contact">Contact</button></li>
-            </ul>
-        </header>
+<header>
+    <h1 style="top: -1%;left: 1%;" class="Fh">Hi im,</h1>
+    <h1 style="top: 83%;left: 1%; color: rebeccapurple;" class="FName">Tallen </h1>
+    <h1 style="top: 166%;left: 1%;" class="SName">Thompson</h1>
+    <h1 style="top: 249%;left: 1%; color: rebeccapurple;" class="Sh">Web developer</h1>
+    <ul class="List" id="List" style="background-color: black; position:absolute; top: 400%;left: 1%;border-radius: 20px;">
+        <li><button id="Home" class="Active">Home</button></li>
+        <li><button id="About_me">About me</button></li>
+        <li><button id="Projects">Projects</button></li>
+        <li><button id="Hobbies">Hobbies</button></li>
+        <li><button id="Contact">Contact</button></li>
+    </ul>
+    </div>
+</header>
 
-        <body>
-            <section class="Sudo_body">
-                <div id="HomePage">
-                    <h2>Home</h2>
-                    <br>
-                    <p>
-                        i'm Currently working as a IT instructor trainee at <a id="Work_site" href="https://flipped.ai">Flipped Academy</a> where i learn everything needed to be a full stack developer and 
-                        with that knowledge i create recourses that are then used to create course content from which is then put on Flipped.ai for employers to find a candidate. 
-                        After this they go though the courses needed to get hired by said employer who also pays for the courses that the candidate needs before they can be hired.
-                    </p>
-                    <br>
-                    <button id="CV">View My CV</button>
-                    <script>
-                        var Work_site = document.getElementById("Work_site");
-                        Work_site.onmouseenter = function()
-                        {
-                            this.style.color = "red";
-                        }
-                        Work_site.onmouseleave = function()
-                        {
-                            this.style.color = "#fff";
-                        }
-                    </script>
-                    <br><br>
-                    <h2>Education / Self Taught Skills</h2>
-                    <br>
-                    <h3>Python</h3>
+<body>
+    <section class="Sudo_body" style="color:   black;">
+        <div id="HomePage">
+            <h2>Home</h2>
+            <br>
+            <p>
+                i'm Currently working as a IT instructor trainee at <a id="Work_site" style="color: black;" href="https://flipped.ai">Gaius networks</a> Whilst in this role I have learned everything needed to be a full stack developer. With this knowledge
+                I create resources that are then used to create course content, which is then put on Flipped.ai for employers to find a candidate.
+            </p>
+            <br>
+            <button style="color: white; background-color: black;" id="CV">View My CV</button>
+            <script>
+                var Work_site = document.getElementById("Work_site");
+                var CV = document.getElementById("CV");
+                CV.onmouseenter = function() {
+                    this.style.background = "rebeccapurple";
+                    this.style.color = "white"
+                }
+                CV.onmouseleave = function() {
+                    this.style.background = "black";
+                    this.style.color = "white"
+                }
+                CV.onclick = function() {
+                    document.location = "CV.pdf"
+                }
 
-                    <p>I am Currently learning python and enjoying it i have used Tkinter to allow me to make a few simple widgets so far but have a few plans for a bigger projects</p>
+                Work_site.onmouseenter = function() {
+                    this.style.color = "rebeccapurple";
+                }
+                Work_site.onmouseleave = function() {
+                    this.style.color = "black";
+                }
+            </script>
+            <br><br>
+            <h2>Education / Self Taught Skills</h2>
+            <br>
+            <h3>Python</h3>
 
-                    <br>
-                    <h3>C#</h3>
+            <p>I am Currently learning python and enjoying it i have used Tkinter to allow me to make a few simple widgets so far and have recently been useing python (Flask) to run web applications</p>
 
-                    <p>I have use C# for quite some time and during that time i have made various programs Console applications, software, Services and other types.</p>
+            <br>
+            <h3>C#</h3>
 
-                    <br>
-                    <h3>JavaScript</h3>
+            <p>within the last year i have made various programs Console applications, software and Services.</p>
 
-                    <p>I have used JavaScript for a while now to add extra functions to websites and sometimes standalone using Node during this i found it easier to use then c# personally</p>
+            <br>
+            <h3>JavaScript</h3>
 
-                    <br>
-                    <h3>Css</h3>
+            <p>Within the last year i have developed my abbilites using JavaScript. This has incuded adding extra functionality to websites and somtimes standalone using Node. I have previously used C# but have found this programming language more intuitive
+                to use</p>
 
-                    <p>I find Css interesting due to its ability to change how a website looks sometimes its very minimal but others its drastic for example something as simple as changing site background or something as complex as site wide Css that changes absolutely everything</p>
+            <br>
+            <h3>Css</h3>
 
-                    <br>
-                    <h3>HTML5</h3>
+            <p>I find Css interesting due to its ability to change how a website looks sometimes its very minimal but others its drastic for example something as simple as changing site background or something as complex as site wide Css that changes absolutely
+                everything
+            </p>
 
-                    <p>I have made 20+ websites so far and some are simple like this one where as some are 100x more complex but due to how much can be done with html when used with JS and CSS its amazing what can be done and thats what i love about web development.</p>
+            <br>
+            <h3>HTML5</h3>
 
-                    <br>
-                </div>
+            <p>I have made 20+ websites so far. There are some that have greater simplicity(like this one) but i have also undertaken many others with far greater complexity. I am always amazed by how much can be done with HTML when used with JS and CSS
+                as this is something i find real enjoyment in </p>
 
-                <div id="About_me_page" hidden>
-                    <h2>About Me</h2>
-                    <br>
-                    <p>
-                    I am a friendly, trustworthy and well-presented individual who is looking to secure 
-                    employment in the Programming industry. 
-                    Enjoys working as part of a team but able to use own initiative to complete tasks given. 
-                    Willing to undertake any training to enhance career development and also willing to be flexible to meet the needs of the employer.
-                    </p>
-                    <br><br>
-                    <p>
-                    Most of the experience i have is due to being self Taught only recently have i been taught properly due to my job
-                    </p>
-                    <br><br>
-                    <p>
-                    I personally Enjoy website development the most as every little thing is coded which is what i like the most about website development.
-                    </p>
-                </div>
+            <br>
+        </div>
 
-                <div id="ProjectsPage" hidden>
-                    <h2>Projects</h2>
-                    <br><br>
-                    <h3>Discord Bot</h3>
-                    <br>
-                    <p>This is a social media bot that is in a Discord Server and responds to people commands with the respective response this program has been re-worked 3 times to add more functionality while keeping the amount of code low.</p>
-                    <br>
-                    <h3>Time and Weather</h3>
-                    <br>
-                    <p>This is a basic Python program but its also my first. Time and Weather uses 2 APIs to get the time and then the Weather after this it processes that information as the weather was in kelvin originally before getting converted to celsius but the biggest challenge was drawing that information to the screen and updating it ever second. But during the development process i had a lot of fun as well as i learnt a lot about this language that ive never used before. </p>
-                    <br>
-                    <h3>HUB</h3>
-                    <br>
-                    <p>This is a program that manages other programs. HUB takes the a supported file (.exe, .py, .js) and runs it on startup if wanted HUB also catches the console output of said program this can be seen within the program itself.</p>
-                    <br>
-                    <h3>Linked</h3>
-                    <br>
-                    <p>This was a application that allowed the user to connect to 4 social media platforms at the same time but as my development focus has changed to web development i am considering how i can make this a possibility on the web and not just as some software. </p>
-                    <br>
-                    <h3>japanese Learning program (Name TBD)</h3>
-                    <br>
-                    <p>I am Currently in the development stage of this program due to deleting the previous version as that version was really slow and un-optimized.</p>
-                </div>
-
-                <div id="HobbiesPage" hidden>
-                    <h2>Hobbies</h2>
-                    <br><br>
-                    <h3>languages</h3>
-                    <br>
-                    <p>I really enjoy learning new things and languages are no exemption as i can speak Japanese to a moderate level and a few others at an basic level as i seam to just pick up random words from random languages sometimes but due to this my vocabulary in Japanese is really vast not due to learning or studying but just by accident. </p>
-                    <br>
-                    <h3>Programming</h3>
-                    <br>
-                    <p>As you can already tell i really enjoy Programming but it wasn't a career path i thought of when i first started learning it i just learnt how to programme because it look interesting and in was not disappointed as i have 100% enjoyed the time from learning to using the 5 programming languages i can now use. whenever i have an idea i open visual studio code and sometimes headbutt a wall for hours but its the eventual success that i really love about it. </p>
-                    <br>
-                    <h3>Gaming</h3>
-                    <br>
-                    <p>I also enjoying playing video game's on my pc whether that be with friend's or alone its one of my favorite past time activity when i am not programming or talking to people online. 
-                        i tried my hand at game development a while ago with Unity and had some fun with that.</p>
-                    <br>
-                    <h3>Music</h3>
-                    <br>
-                    <p>whether i am programming, playing a game or just chatting with friends i always have some music on in the background but interestingly enough i don't listen to English music its mainly Japanese music due to the different tone this type of music offers the difference in my eyes at least is massive. </p>
-                </div>
-
-                <div id="ContactPage" hidden>
-                    <h2>Contact</h2>
-                    <br>
-                    <h3>Email: tallen2016gy@gmail.com</h3>
-                    <br>
-                    <h3>Phone Number: 07399212913</h3>
-                    <br>
-                    <button id="MailOpen">Open Email Client</button>
-                </div>
-
+        <div id="About_me_page" hidden>
+            <h2>About Me</h2>
+            <br>
+            <p>
                 <script>
-                    var home = document.getElementById("Home")
-                    var About_me = document.getElementById("About_me");
-                    var Projects = document.getElementById("Projects");
-                    var Hobbies = document.getElementById("Hobbies");
-                    var Contact = document.getElementById("Contact");
-                    var HomePage = document.getElementById("HomePage");
-                    var About_me_page = document.getElementById("About_me_page");
-                    var ProjectsPage = document.getElementById("ProjectsPage");
-                    var HobbiesPage = document.getElementById("HobbiesPage");
-                    var ContactPage = document.getElementById("ContactPage");
-                    var MailOpen = document.getElementById("MailOpen");
-                    var CV = document.getElementById("CV");
-
-                    home.onclick = function()
-                    {
-                        About_me.className ="null";
-                        home.className = "Active";
-                        Projects.className = "null";
-                        Hobbies.className = "nul";
-                        Contact.className = "null";
-                        HomePage.hidden = false;
-                        About_me_page.hidden = true;
-                        ProjectsPage.hidden = true;
-                        HobbiesPage.hidden = true;
-                        ContactPage.hidden = true;
-                    }
-                    About_me.onclick = function()
-                    {
-                        About_me.className ="Active";
-                        home.className = "null";
-                        Projects.className = "null";
-                        Hobbies.className = "null";
-                        Contact.className = "null";
-                        HomePage.hidden = true;
-                        About_me_page.hidden = false;
-                        ProjectsPage.hidden = true;
-                        HobbiesPage.hidden = true;
-                        ContactPage.hidden = true;
-                    }
-                    Projects.onclick = function()
-                    {
-                        Projects.className = "Active";
-                        About_me.className ="null";
-                        home.className = "null";
-                        Hobbies.className = "null";
-                        Contact.className = "null";
-                        HomePage.hidden = true;
-                        About_me_page.hidden = true;
-                        ProjectsPage.hidden = false;
-                        HobbiesPage.hidden = true;
-                        ContactPage.hidden = true;
-                    }
-                    Hobbies.onclick = function()
-                    {
-                        Hobbies.className = "Active";
-                        About_me.className ="null";
-                        home.className = "null";
-                        Projects.className = "null";
-                        Contact.className = "null";
-                        HomePage.hidden = true;
-                        About_me_page.hidden = true;
-                        ProjectsPage.hidden = true;
-                        HobbiesPage.hidden = false;
-                        ContactPage.hidden = true;
-                    }
-                    Contact.onclick = function()
-                    {
-                        Contact.className = "Active";
-                        Hobbies.className = "null";
-                        About_me.className ="null";
-                        home.className = "null";
-                        Projects.className = "null";
-                        HomePage.hidden = true;
-                        About_me_page.hidden = true;
-                        ProjectsPage.hidden = true;
-                        HobbiesPage.hidden = true;
-                        ContactPage.hidden = false;
-                    }
-                    MailOpen.onclick = function()
-                    {
-                    var window1 = window.open('mailto:tallen2016gy@gmail.com?subject=Mail&body=body','_blank');
-                        window1.close();
-                    }
-                    CV.onclick = function()
-                    {
-                        window.location = "CV.pdf"
-                    }
+                    // More to be added soon
                 </script>
-            </section>
-        </body>
+                I am a friendly, trustworthy and well-presented individual who is looking to continue building my work experience within the programming industry.
+            </p>
+            <br><br>
+            <p>
+                throughout my life I have always been self taught in a number of applications and systems such as Website development and software development and i have also had the opportunity to use this experiance whithin a practical work setting whilst employed
+                where i have used my skills in web development aswell as learn python development with Gaius networks.
+            </p>
+            <br><br>
+            <p>
+                An area of particular enjoyment for me is website development as I am very interested in the amount of programing needed and this is a area i would be keen to be wokring on
+            </p>
+        </div>
+
+        <div id="ProjectsPage" hidden>
+            <h2>Projects</h2>
+            <br><br>
+            <h3>Discord Bot</h3>
+            <br>
+            <p>This is a social media bot that is in a Discord Server and responds to people commands with the respective response this program has been re-worked 3 times to add more functionality while keeping the amount of code low.</p>
+            <br>
+            <h3>Time and Weather</h3>
+            <br>
+            <p>This is a basic Python program but its also my first. Time and Weather uses 2 APIs to get the time and then the Weather after this it processes that information as the weather was in kelvin originally before getting converted to celsius but
+                the biggest challenge was drawing that information to the screen and updating it every second. But during the development process i had a lot of fun as well as i learnt a lot about this language that ive never used before. </p>
+            <br>
+            <h3>HUB</h3>
+            <br>
+            <p>This is a program that manages other programs. HUB takes the a supported file (.exe, .py, .js) and runs it on startup if wanted, HUB also catches the console output of said program this can be seen within the program itself.</p>
+            <br>
+            <h3>Linked</h3>
+            <br>
+            <p>This was a application that allowed the user to connect to 4 social media platforms at the same time but as my development focus has changed to web development i am considering how i can make this a possibility on the web.</p>
+            <br>
+            <br>
+            <h3><a id="Nihongo" style="color: black;" href="https://tallen.pythonanywhere.com/">Nihongo.net</a></h3>
+            <script>
+                var Nihongo = document.getElementById("Nihongo");
+                Nihongo.onmouseenter = function() {
+                    this.style.color = "rebeccapurple";
+                }
+                Nihongo.onmouseleave = function() {
+                    this.style.color = "black";
+                }
+            </script>
+            <br>
+            <p>Nihongo.net is a project of mine and a few friends where we aim to teach people Japanese aswell as Japanese Culture. This project Uses HTML, CSS, JS as-well as pyton(Flask)(passion project). <br> This is also the biggest project ive worked
+                on.
+            </p>
+        </div>
+
+        <div id="HobbiesPage" hidden>
+            <h2>Hobbies</h2>
+            <br><br>
+            <h3>languages</h3>
+            <br>
+            <p>I really enjoy learning new things and languages are no exemption as i can speak Japanese to a moderate level and a few others at an basic level as i seam to just pick up random words from random languages sometimes but due to this my vocabulary
+                in Japanese is really vast not due to learning or studying but just by accident. </p>
+            <br>
+            <h3>Programming</h3>
+            <br>
+            <p>As you can already tell i really enjoy Programming but it wasn't a career path i thought of when i first started learning it i just learnt how to programme because it look interesting and in was not disappointed as i have 100% enjoyed the
+                time from learning to using the 5 programming languages i can now use. whenever i have an idea i open visual studio code and sometimes headbutt a wall for hours but its the eventual success that i really love about it. </p>
+            <br>
+            <h3>Gaming</h3>
+            <br>
+            <p>I also enjoying playing video game's on my pc whether that be with friend's or alone its one of my favorite past time activity when i am not programming or talking to people online. i tried my hand at game development a while ago with Unity
+                and had some fun with that.</p>
+            <br>
+            <h3>Music</h3>
+            <br>
+            <p>whether i am programming, playing a game or just chatting with friends i always have some music on in the background but interestingly enough i don't listen to English music its mainly Japanese music due to the different tone this type of
+                music offers the difference in my eyes at least is massive. </p>
+        </div>
+
+        <div id="ContactPage" style="text-align: center;" hidden>
+            <h2>Contact</h2>
+            <br>
+            <h3>Email Me</h3>
+            <br>
+            <button id="Submit" style="width: 10%;">Open Client</button>
+            <br><br>
+            <h4>Or Email me at: tallen2016gy@gmail.com</h4>
+        </div>
+        <script>
+            var Submit = document.getElementById("Submit");
+            Submit.onclick = function() {
+                document.location = "mailto:tallen2016gy@gmail.com"
+            }
+        </script>
+
+
+        <script>
+            //Pages
+            var HomePage = document.getElementById("HomePage");
+            var About_me_page = document.getElementById("About_me_page");
+            var ProjectsPage = document.getElementById("ProjectsPage");
+            var HobbiesPage = document.getElementById("HobbiesPage");
+            var ContactPage = document.getElementById("ContactPage");
+            //buttons
+            var Home = document.getElementById("Home");
+            var About_me = document.getElementById("About_me");
+            var Projects = document.getElementById("Projects");
+            var Hobbies = document.getElementById("Hobbies");
+            var Contact = document.getElementById("Contact");
+
+            Home.onclick = function() { //homepage Stuff
+                Home.className = "Active";
+                Projects.className = null;
+                Contact.className = null
+                About_me.className = null;
+                Hobbies.className = null;
+                HomePage.hidden = false;
+                About_me_page.hidden = true;
+                ProjectsPage.hidden = true;
+                HobbiesPage.hidden = true;
+                ContactPage.hidden = true;
+            }
+
+            About_me.onclick = function() { //About me page Stuff
+                About_me.className = "Active";
+                Projects.className = null;
+                Contact.className = null
+                Home.className = null;
+                Hobbies.className = null;
+                HomePage.hidden = true;
+                About_me_page.hidden = false;
+                ProjectsPage.hidden = true;
+                HobbiesPage.hidden = true;
+                ContactPage.hidden = true;
+            }
+
+            Projects.onclick = function() { //Projects page Stuff
+                Projects.className = "Active";
+                About_me.className = null;
+                Contact.className = null
+                Home.className = null;
+                Hobbies.className = null;
+                HomePage.hidden = true;
+                About_me_page.hidden = true;
+                ProjectsPage.hidden = false;
+                HobbiesPage.hidden = true;
+                ContactPage.hidden = true;
+            }
+
+            Hobbies.onclick = function() { //Hobbies page Stuff
+                Hobbies.className = "Active";
+                About_me.className = null;
+                Contact.className = null
+                Home.className = null;
+                Projects.className = null;
+                HomePage.hidden = true;
+                About_me_page.hidden = true;
+                ProjectsPage.hidden = true;
+                HobbiesPage.hidden = false;
+                ContactPage.hidden = true;
+            }
+            Contact.onclick = function() { //Hobbies page Stuff
+                Contact.className = "Active";
+                About_me.className = null;
+                Hobbies.className = null
+                Home.className = null;
+                Projects.className = null;
+                HomePage.hidden = true;
+                About_me_page.hidden = true;
+                ProjectsPage.hidden = true;
+                HobbiesPage.hidden = true;
+                ContactPage.hidden = false;
+            }
+        </script>
+    </section>
+</body>
+
 </html>
