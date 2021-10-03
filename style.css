@@ -86,9 +86,7 @@ header .Sh {
 }
 
 @keyframes Name {
-    100% {
-        left: 15px;
-    }
+    100% {}
     0% {
         left: -10000px;
     }
@@ -178,13 +176,4 @@ p {
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     user-select: none;
-}
-
-@keyframes CVA {
-    100% {
-        left: 20%;
-    }
-    0% {
-        left: -100%;
-    }
 }
