@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 <script src="https://unpkg.com/feather-icons"></script>
 <meta charset="UTF-8">
@@ -10,8 +10,9 @@
     <h1 style="top: -1%;left: 1%;" class="Fh">Hi im</h1>
     <h1 style="top: 83%;left: 1%; color: rebeccapurple;" class="FName">Tallen </h1>
     <h1 style="top: 166%;left: 1%;" class="SName">Thompson</h1>
-    <h1 style="top: 249%;left: 1%; color: rebeccapurple;" class="Sh">Web developer</h1>
-    <ul class="List" id="List" style="background-color: black; position:absolute; top: 400%;left: 1%;border-radius: 20px;">
+    <h1 style="top: 249%;left: 1%; color: rebeccapurple;" class="Sh">developer</h1>
+    <ul class="List" id="List"
+        style="background-color: black; position:absolute; top: 400%;left: 1%;border-radius: 20px;">
         <li><button id="Home" class="Active">Home</button></li>
         <li><button id="About_me">About me</button></li>
         <li><button id="Projects">Projects</button></li>
@@ -26,117 +27,186 @@
             <h2>Home</h2>
             <br>
             <p>
-                i'm Currently Unemployed, My last job was at <a id="Work_site" style="color: black;" href="https://flipped.ai">Gaius networks</a> as an IT instructor, Whilst in this role I have learned everything needed to be a full stack developer. With
-                this knowledge I create resources that are then used to create course content, which is then put on Flipped.ai for employers to find a candidate.
+                i'm Currently Unemployed, My last job was at
+                <a class="Work_site" href="https://www.crafthivecreative.com">CraftHive Creative</a>
+                as a Technical Director which entailed me creating custom software solutions,
+                during this i was also working for
+                <a class="Work_site" href="https://www.blpvfx.com">Big Lazy Panda</a>
+                as a Technical Director also. During these roles i worked on both compaines CGI Pipeline as well as
+                asisted on the production of a apple TV show,
+                this opportunity gave me a understanding of the CGI workflow.
+                <br><br>
+                for more information about these roles please see my cv.
+                <br><br>
+                Scroll Down for a list of my current skills
             </p>
             <br>
-            <button style="color: white; background-color: black;" id="CV">View My CV</button>
+            <button style="color: white; background-color: black;" onclick=ShowCV()>View My CV</button>
             <script>
-                var Work_site = document.getElementById("Work_site");
-                var CV = document.getElementById("CV");
-                CV.onmouseenter = function() {
-                    this.style.background = "rebeccapurple";
-                    this.style.color = "white"
-                }
-                CV.onmouseleave = function() {
-                    this.style.background = "black";
-                    this.style.color = "white"
-                }
-                CV.onclick = function() {
+                function ShowCV() {
                     document.location = "CV.pdf"
                 }
-
-                Work_site.onmouseenter = function() {
-                    this.style.color = "rebeccapurple";
-                }
-                Work_site.onmouseleave = function() {
-                    this.style.color = "black";
-                }
             </script>
-            <br><br>
-            <h2>Education / Self Taught Skills</h2>
-            <br>
-            <h3>Python</h3>
+            <div style="margin: auto; margin-top: 30rem; margin-bottom: 5rem; ">
+                <h3>Current list of skills</h3>
+                <table id="SKILL_TABLE" style="margin: auto; border: black 2px solid;">
+                    <tr>
+                        <th>Skill</th>
+                        <th>Years Of Experiance</th>
+                    </tr>
+                    <tr>
+                        <td>Windows OS</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>python</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Qt(Pyside6)</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Eevee Renderer</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Cycles Renderer</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Adobe Extend Script</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <td>Maya Api</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <td>After Effects API</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <td>RedShift Renderer</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <td>Arnold Renderer</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Linux OS</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>TypeScript</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>React.js</td>
+                        <td>Less than 1</td>
+                    </tr>
+                    <tr>
+                        <td>PHP</td>
+                        <td>Less than 1</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>Less than 1</td>
+                    </tr>
+                    <tr>
+                        <td>ASP.NET</td>
+                        <td>Less than 1</td>
+                    </tr>
+                    <tr>
+                        <td>SQL SERVER</td>
+                        <td>Less than 1</td>
+                    </tr>
+                </table>
+            </div>
 
-            <p>I am Currently learning python and enjoying it i have used Tkinter to allow me to make a few simple widgets so far and have recently been useing python (Flask) to run web applications</p>
-
-            <br>
-            <h3>C#</h3>
-
-            <p>within the last year i have made various programs Console applications, software and Services.</p>
-
-            <br>
-            <h3>JavaScript</h3>
-
-            <p>Within the last year i have developed my abbilites using JavaScript. This has incuded adding extra functionality to websites and somtimes standalone using Node. I have previously used C# but have found this programming language more intuitive
-                to use</p>
-
-            <br>
-
-            <br>
-            <h3>React.js</h3>
-
-            <p>I am Currently learning react.js during this i have learnt many things about it and enjoy using it alone side tailwind css
-
-                <br>
-                <br>
-                <h3>Tailwind CSS</h3>
-
-                <p>I am Currently learning how to use Tailwind CSS along side react.js during this i learnt a lot and may use Tailwind in future projects as its ease of use is really appealing.
-
-                    <br>
-                    <br>
-                    <h3>CSS</h3>
-
-                    <p>I find CSS interesting due to its ability to change how a website looks. It can can change how every aspect of a website looks and i find that really interesting.
-                    </p>
-
-                    <br>
-                    <h3>HTML5</h3>
-
-                    <p>I have made 20+ websites so far. There are some that have greater simplicity(like this one) but i have also undertaken many others with far greater complexity. I am always amazed by how much can be done with HTML when used with JS
-                        and CSS as this is something i find real enjoyment in </p>
-
-                    <br>
         </div>
 
         <div id="About_me_page" hidden>
             <h2>About Me</h2>
             <br>
             <p>
-                I am a friendly, trustworthy and well-presented individual who is looking to continue building my work experience within the programming industry.
+                I am a friendly, trustworthy and well-presented individual who is looking to continue building my work
+                experience within the programming industry.
             </p>
             <br><br>
             <p>
-                throughout my life I have always been self taught in a number of applications and systems such as Website development and software development and i have also had the opportunity to use this experience within a practical work setting whilst employed where
-                i have used my skills in web development as-well as learn python development with Gaius networks.
+                Personally i am a strong beliver in there being no excuse when it comes to not knowing something/not
+                wanting to learn and
+                in tern i have always strived to learn something/anything that interests me and becuase of that over the
+                last few years i have learnt
+                web development, software development and some SQL server managment.
             </p>
             <br><br>
             <p>
-                An area of particular enjoyment for me is website development as I am very interested in the amount of programing needed and this is a area i would be keen to continue working in.
+                I get great satisfaction out of finishing a project and seeing it all come together.
             </p>
         </div>
 
         <div id="ProjectsPage" hidden>
             <h2>Projects</h2>
             <br><br>
-            <h3>Discord Bot</h3>
+            <h3>
+                Hatsumi
+            </h3>
+            <p>
+                This was a discord bot, "Was" because i had to shut it down after 6 months of use but regardless
+                "Hatsumi"
+                which was a name given to this discord bot by a member of the community it managed and supported.
+                This bot had many features just to name a few, it could play music,
+                scan posts for anything that broke the community rules and then report said user to the admin team, it
+                could also post
+                itself at the request of community members.
+            </p>
+            <br><br>
+            <h3>Work Manager <span style="color: rebeccapurple;">(WIP)</span></h3>
             <br>
-            <p>This is a social media bot that is in a Discord Server and responds to people commands with the respective response this program has been re-worked 3 times to add more functionality while keeping the amount of code low.</p>
+            <p>
+                This piece of software was something I created to help keep track of earnings and hours spent when I was
+                working self-employed/freelance originally it would take in user-given data and save it to a JSON file
+                this has recently been
+                updated to be a self-contained SQL database. Also recently completely updated its UI, Once this software
+                is finished it will
+                get an open-source license as I hope people can take this and make it their own.
+            </p>
+            <br><br>
+            <h3>
+                Linux Mod Manager
+                <span style="color: rebeccapurple;">
+                    (WIP)
+                </span>
+            </h3>
+            <p>
+                I started this project when I ran linux on my PC as i noticed a lack of mod support for games
+                of the platform and as someone who enjoys gaming as well as modding said games i decided id make my own
+                which will
+                be open source once it's in a better place as it's still in the early phases of development, i
+                want this software
+                to be able to manage many games at once with the help of mulit threading.
+            </p>
             <br>
-            <h3>Time and Weather</h3>
-            <br>
-            <p>This is a basic Python program but its also my first Time and Weather uses 2 APIs to get the time and then the Weather after this. It processes that information as the weather was in kelvin originally before getting converted to celsius. During
-                the development process the biggest challenge was drawing that information to the screen and updating it every second. But during the development process i had a lot of fun as well as i learnt a lot about this language that ive never used
-                before. </p>
-            <br>
-            <h3>HUB</h3>
-            <br>
-            <p>This is a program that manages other programs. HUB takes the a supported file (.exe, .py, .js) and runs it on startup if wanted, HUB also catches the console output of said program this can be seen within the program itself.</p>
-            <br>
-            <h3>Linked</h3>
-            <br>
-            <p>This was a application that allowed the user to connect to 4 social media platforms at the same time but as my development focus has changed to web development i am considering how i can make this a possibility on the web.</p>
+            <h3>And many more.. but im under a NDA sooo.</h3>
         </div>
 
         <div id="HobbiesPage" hidden>
@@ -144,23 +214,39 @@
             <br><br>
             <h3>languages</h3>
             <br>
-            <p>I really enjoy learning new things and languages are no exception as i can speak Japanese to a moderate level. A few other languages at a very basic level as i seem to just pick up random words from random languages sometimes. Due to this
-                my vocabulary in Japanese is really vast not due to learning or studying but just by accident. </p>
+            <p>
+                I enjoy learning new things and languages are no exception as I can speak Japanese and a few other languages
+                but only at a very basic level due to me not learning them. I pick up words from different languages
+                every so often randomly. This is how I started with Japanese I picked up a few words here and there so I i figured
+                id give it a shot and learn it properly.
+            </p>
             <br>
             <h3>Programming</h3>
             <br>
-            <p>As you can already tell i really enjoy Programming but it wasn't a career path i thought of when i first started learning it i just learnt how to programme because it look interesting and in was not disappointed as i have 100% enjoyed the
-                time from learning to using the 5 programming languages i can now use. whenever i have an idea i open visual studio code and sometimes headbutt a wall for hours but its the eventual success that i really love about it. </p>
+            <p>
+                Now this is something I started doing randomly one day after meeting someone online who was making a game for a gamejam
+                I watched him create this game, Once it was finished I figured id give it a shot myself and after about 6 months of 
+                headbutting a wall I finally got a very basic game working just a simple platformer however the feeling of it all 
+                finally coming together and working was very much worth it. 
+                I managed to turn a simple hobby into something I could do as a job which excited me as I could do something I enjoy.
+            </p>
             <br>
             <h3>Gaming</h3>
             <br>
-            <p>I also enjoying playing video game's on my pc whether that be with friend's or alone its one of my favorite past time activity when i am not programming or talking to people online. i tried my hand at game development a while ago with Unity
-                and had some fun with that.</p>
+            <p>
+                I also play video games in my free time on my own or with friend's this is something i do when im not developing a
+                proof of concept or working on any of my Projects or talking to people online, I did try my hand at game development a while ago with unity and unreal
+                engine and i had quite a lot of fun but realised it's not for me after a few weeks.
+            </p>
             <br>
             <h3>Music</h3>
             <br>
-            <p>whether i am programming, playing a game or just chatting with friends i always have some music on in the background but interestingly enough i don't listen to English music its mainly Japanese music due to the different tone this type of
-                music offers the difference in my eyes at least is massive. </p>
+            <p>
+                whether i am programming, playing a game or just chatting with friends i always have some music on in the
+                background but I personally listen to music in Japanese as well as english sometimes mainly Japanese due to the 
+                languages richness when compared to english. i've also tried making my own music before and while it was enjoyable
+                i couldnt quite get the hang of it.
+            </p>
         </div>
 
         <div id="ContactPage" style="text-align: center;" hidden>
@@ -171,13 +257,15 @@
             <button id="Submit" style="width: 10%;">Open Client</button>
             <br><br>
             <h4>Or Email me at: tallen2016gy@gmail.com</h4>
+            <br><br>
+            <h4>if you want to call me instead of email my phone number is on my CV,<br> refer to the home page for link to CV.</h4>
+            <script>
+                var Submit = document.getElementById("Submit");
+                Submit.onclick = function () {
+                    document.location = "mailto:tallen2016gy@gmail.com"
+                }
+            </script>
         </div>
-        <script>
-            var Submit = document.getElementById("Submit");
-            Submit.onclick = function() {
-                document.location = "mailto:tallen2016gy@gmail.com"
-            }
-        </script>
 
 
         <script>
@@ -194,7 +282,7 @@
             var Hobbies = document.getElementById("Hobbies");
             var Contact = document.getElementById("Contact");
 
-            Home.onclick = function() { //homepage Stuff
+            Home.onclick = function () { //homepage Stuff
                 Home.className = "Active";
                 Projects.className = null;
                 Contact.className = null
@@ -207,7 +295,7 @@
                 ContactPage.hidden = true;
             }
 
-            About_me.onclick = function() { //About me page Stuff
+            About_me.onclick = function () { //About me page Stuff
                 About_me.className = "Active";
                 Projects.className = null;
                 Contact.className = null
@@ -220,7 +308,7 @@
                 ContactPage.hidden = true;
             }
 
-            Projects.onclick = function() { //Projects page Stuff
+            Projects.onclick = function () { //Projects page Stuff
                 Projects.className = "Active";
                 About_me.className = null;
                 Contact.className = null
@@ -233,7 +321,7 @@
                 ContactPage.hidden = true;
             }
 
-            Hobbies.onclick = function() { //Hobbies page Stuff
+            Hobbies.onclick = function () { //Hobbies page Stuff
                 Hobbies.className = "Active";
                 About_me.className = null;
                 Contact.className = null
@@ -245,7 +333,7 @@
                 HobbiesPage.hidden = false;
                 ContactPage.hidden = true;
             }
-            Contact.onclick = function() { //Hobbies page Stuff
+            Contact.onclick = function () { //Hobbies page Stuff
                 Contact.className = "Active";
                 About_me.className = null;
                 Hobbies.className = null

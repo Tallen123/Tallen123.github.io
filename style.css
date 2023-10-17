@@ -6,6 +6,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+p {
+    font-weight: 600;
+}
+
 body {
     min-height: 100vh;
     background-color: #5EC994;
@@ -92,6 +101,34 @@ header .Sh {
     }
 }
 
+header ul li button:hover {
+    background: rebeccapurple;
+    color: white;
+}
+
+button {
+    outline: none;
+    background: none;
+    border-radius: 10px;
+    border: 0;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    background: #000;
+    z-index: 2;
+}
+
+.CV {
+    color: #fff;
+    position: absolute;
+    left: 56rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
 .Active {
     background: rebeccapurple;
     color: white;
@@ -123,30 +160,15 @@ header .Sh {
     padding: 6px;
 }
 
-header ul li button:hover {
-    background: rebeccapurple;
-    color: white;
+.Work_site{
+    color: black;
+}
+.Work_site:hover{
+    color: rebeccapurple;
 }
 
-button {
-    outline: none;
-    background: none;
-    border-radius: 10px;
-    border: 0;
-    text-decoration: none;
-    padding: 10px;
-    width: 100%;
-    color: #fff;
-    cursor: pointer;
-    background: #000;
-    z-index: 2;
-}
 
-.Sudo_body a {
-    color: #fff;
-}
-
-#CV {
+#CV, #SKILLS {
     outline: none;
     background: none;
     border: 0;
@@ -157,23 +179,4 @@ button {
     border-radius: 20px;
     cursor: pointer;
     background: #fff;
-}
-
-html {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-p {
-    font-weight: 600;
-}
-
-.CV {
-    color: #fff;
-    position: absolute;
-    left: 56rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    user-select: none;
 }
